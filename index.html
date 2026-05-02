@@ -1,467 +1,392 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Centsible: AI-Powered Financial Management App</title>
-        <link rel="icon" type="image/png" href="images/logo.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <script defer src="script.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centsible — Make Every Cent Count</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <body>
-        <!-- NAVIGATION -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="#top" class="nav-logo">
-                    <img
-                        src="images/logo.png"
-                        alt="Centsible Logo"
-                        class="logo-img"
-                    />
-                    <span>Centsible</span>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+        <a href="#top" class="nav-logo">
+            <img src="images/logo.png" alt="Centsible" />
+            <span class="nav-logo-name">Cent<span>sible</span></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#who">Who It's For</a></li>
+            <li><a href="#team">Team</a></li>
+        </ul>
+        <a href="#features" class="nav-cta">Get Started</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+    <div class="hero-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-eyebrow">
+        <span class="dot"></span>
+        AI-Powered Financial Intelligence
+    </div>
+
+    <div class="hero-logo-wrap">
+        <div class="logo-ring-2"></div>
+        <div class="logo-ring"></div>
+        <img class="hero-logo-img" src="images/logo.png" alt="Centsible Logo" />
+    </div>
+
+    <h1>Cent<span class="accent">sible</span></h1>
+    <p class="hero-tagline">Make Every Cent Count</p>
+
+    <p class="hero-desc">
+        Take command of your financial future with AI-powered budgeting,
+        intelligent insights, and a 24/7 personal finance companion.
+        Built for the way you actually live.
+    </p>
+
+    <div class="hero-actions">
+        <a href="#features" class="btn-primary">Explore Features &rarr;</a>
+        <a href="#how-it-works" class="btn-ghost">How It Works</a>
+    </div>
+
+    <div class="hero-stats">
+        <div class="stat-item">
+            <div class="stat-num">8+</div>
+            <div class="stat-label">Core Features</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">24/7</div>
+            <div class="stat-label">AI Assistant</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Personalized</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">256&#8209;bit</div>
+            <div class="stat-label">Encrypted</div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section features-section" id="features">
+    <div class="section-inner">
+        <div class="features-header">
+            <span class="eyebrow reveal">Platform Features</span>
+            <h2 class="section-title reveal reveal-delay-1">Everything your finances need</h2>
+            <p class="section-sub reveal reveal-delay-2">Eight powerful tools working in concert — from personalized budgeting to AI-driven tax guidance.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feat-card reveal">
+                <div class="feat-glow"></div>
+                <div class="feat-icon"><i class="fas fa-sliders-h"></i></div>
+                <div class="feat-title">Personalized Budgeting</div>
+                <div class="feat-desc">Customizable budgets tailored to your exact spending habits and lifestyle. No two budgets are alike.</div>
+            </div>
+            <div class="feat-card reveal reveal-delay-1">
+                <div class="feat-glow"></div>
+                <div class="feat-icon"><i class="fas fa-brain"></i></div>
+                <div class="feat-title">AI Budget Creator</div>
+                <div class="feat-desc">Intelligent algorithms analyze your patterns to generate realistic, achievable budget structures automatically.</div>
+            </div>
+            <div class="feat-card reveal reveal-delay-2">
+                <div class="feat-glow"></div>
+                <div class="feat-icon"><i class="fas fa-comments"></i></div>
+                <div class="feat-title">Budget Buddy AI</div>
+                <div class="feat-desc">Your always-on financial confidant. Ask anything, get personalized guidance around the clock.</div>
+            </div>
+            <div class="feat-card reveal reveal-delay-3">
+                <div class="feat-glow"></div>
+                <div class="feat-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                <div class="feat-title">Tax Assistant</div>
+                <div class="feat-desc">Maximize deductions and simplify filing with step-by-step AI guidance calibrated to your situation.</div>
+            </div>
+            <div class="feat-card reveal reveal-delay-4">
+                <div class="feat-glow"></div>
+                <div class="feat-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="feat-title">Spending Insights</div>
+                <div class="feat-desc">Visual breakdowns of every dollar with actionable recommendations to optimize your cash flow.</div>
+            </div>
+            <div class="feat-card reveal reveal-delay-5">
+                <div class="feat-glow"></div>
+                <div class="feat-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="feat-title">Secure &amp; Private</div>
+                <div class="feat-desc">Bank-grade 256-bit encryption. Your financial data is yours and yours alone — always.</div>
+            </div>
+            <div class="feat-card reveal reveal-delay-6">
+                <div class="feat-glow"></div>
+                <div class="feat-icon"><i class="fas fa-bullseye"></i></div>
+                <div class="feat-title">Goal Tracking</div>
+                <div class="feat-desc">Set milestones, monitor progress in real time, and celebrate every financial win along the way.</div>
+            </div>
+            <div class="feat-card reveal reveal-delay-7">
+                <div class="feat-glow"></div>
+                <div class="feat-icon"><i class="fas fa-palette"></i></div>
+                <div class="feat-title">Full Customization</div>
+                <div class="feat-desc">Make it yours. Personalize every aspect of the experience to match your style and workflow.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section hiw-section" id="how-it-works">
+    <div class="section-inner">
+        <span class="eyebrow reveal">Process</span>
+        <h2 class="section-title reveal reveal-delay-1">Four steps to financial clarity</h2>
+        <div class="hiw-grid">
+            <div class="hiw-step reveal reveal-delay-1">
+                <div class="step-num-wrap"><div class="step-num">01</div></div>
+                <div class="step-title">Connect Your Finances</div>
+                <div class="step-desc">Securely link your accounts. Bank-level encryption ensures complete safety from day one.</div>
+            </div>
+            <div class="hiw-step reveal reveal-delay-2">
+                <div class="step-num-wrap"><div class="step-num">02</div></div>
+                <div class="step-title">AI Learns Your Habits</div>
+                <div class="step-desc">Our models study your spending patterns, income cycles, and financial behaviors.</div>
+            </div>
+            <div class="hiw-step reveal reveal-delay-3">
+                <div class="step-num-wrap"><div class="step-num">03</div></div>
+                <div class="step-title">Receive Tailored Guidance</div>
+                <div class="step-desc">Get personalized budgets, forecasts, and recommendations built for your unique situation.</div>
+            </div>
+            <div class="hiw-step reveal reveal-delay-4">
+                <div class="step-num-wrap"><div class="step-num">04</div></div>
+                <div class="step-title">Track &amp; Achieve</div>
+                <div class="step-desc">Monitor progress in real time. Budget Buddy is with you every step of the way.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHO IS IT FOR -->
+<section class="section for-section" id="who">
+    <div class="section-inner">
+        <div class="for-layout">
+            <div class="for-left">
+                <span class="eyebrow reveal">Designed For</span>
+                <h2 class="section-title reveal reveal-delay-1">Built for everyone serious about money</h2>
+                <p class="section-sub reveal reveal-delay-2">Whether you're just starting out or managing complex finances, Centsible adapts to where you are — and where you want to go.</p>
+            </div>
+            <div class="for-grid">
+                <div class="for-card reveal">
+                    <div class="for-card-title">Students &amp; Young Professionals</div>
+                    <div class="for-card-desc">Build healthy financial habits early. Set the foundation for a secure future.</div>
+                </div>
+                <div class="for-card reveal reveal-delay-1">
+                    <div class="for-card-title">Families on a Budget</div>
+                    <div class="for-card-desc">Manage household finances effectively and teach children responsible money habits.</div>
+                </div>
+                <div class="for-card reveal reveal-delay-2">
+                    <div class="for-card-title">Freelancers &amp; Self-Employed</div>
+                    <div class="for-card-desc">Track irregular income, manage quarterly taxes, and stay ahead of cash flow.</div>
+                </div>
+                <div class="for-card reveal reveal-delay-3">
+                    <div class="for-card-title">Aspiring Investors</div>
+                    <div class="for-card-desc">Understand your saving capacity and create room to build long-term wealth.</div>
+                </div>
+                <div class="for-card reveal reveal-delay-4">
+                    <div class="for-card-title">Anyone Wanting Change</div>
+                    <div class="for-card-desc">Transform your relationship with money starting today, regardless of where you're at.</div>
+                </div>
+                <div class="for-card reveal reveal-delay-5">
+                    <div class="for-card-title">Financial Planners</div>
+                    <div class="for-card-desc">Deliver clients smarter insights and more precise guidance backed by AI.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY CENTSIBLE -->
+<section class="section why-section" id="why">
+    <div class="section-inner">
+        <span class="eyebrow reveal">Our Edge</span>
+        <h2 class="section-title reveal reveal-delay-1">Why Centsible stands apart</h2>
+        <div class="why-layout">
+            <div class="why-list">
+                <div class="why-item reveal">
+                    <div class="why-icon-box"><i class="fas fa-fingerprint"></i></div>
+                    <div>
+                        <div class="why-item-title">Truly Personalized</div>
+                        <div class="why-item-desc">Not one-size-fits-all. Every budget, recommendation, and interface element adapts to you and evolves with your life.</div>
+                    </div>
+                </div>
+                <div class="why-item reveal reveal-delay-1">
+                    <div class="why-icon-box"><i class="fas fa-robot"></i></div>
+                    <div>
+                        <div class="why-item-title">AI-Powered Intelligence</div>
+                        <div class="why-item-desc">Advanced machine learning understands your financial behavior and provides proactive, smart guidance before you even ask.</div>
+                    </div>
+                </div>
+                <div class="why-item reveal reveal-delay-2">
+                    <div class="why-icon-box"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <div class="why-item-title">Always Available</div>
+                        <div class="why-item-desc">Budget Buddy is there 24/7. Financial questions don't wait for business hours — and neither should your advisor.</div>
+                    </div>
+                </div>
+                <div class="why-item reveal reveal-delay-3">
+                    <div class="why-icon-box"><i class="fas fa-lock"></i></div>
+                    <div>
+                        <div class="why-item-title">Privacy First</div>
+                        <div class="why-item-desc">Your financial data is encrypted at rest and in transit. We never sell your data — you're always in full control.</div>
+                    </div>
+                </div>
+                <div class="why-item reveal reveal-delay-4">
+                    <div class="why-icon-box"><i class="fas fa-layer-group"></i></div>
+                    <div>
+                        <div class="why-item-title">Built for Real Life</div>
+                        <div class="why-item-desc">Handles irregular income, multiple accounts, investments, and the messy complexity of actual human finances.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-visual reveal reveal-delay-2">
+                <div class="mock-header">
+                    <div class="mock-dot mock-dot-r"></div>
+                    <div class="mock-dot mock-dot-y"></div>
+                    <div class="mock-dot mock-dot-g"></div>
+                    <div class="mock-title">Budget Overview &middot; April 2026</div>
+                </div>
+                <div class="mock-metric">
+                    <div class="mock-label">Monthly Savings</div>
+                    <div class="mock-val">$1,840<span>&#8593; 14%</span></div>
+                </div>
+                <div class="mock-bars">
+                    <div class="mock-bar-row">
+                        <div class="mock-bar-label">Housing</div>
+                        <div class="mock-bar-track"><div class="mock-bar-fill" style="width:68%"></div></div>
+                        <div class="mock-bar-pct">68%</div>
+                    </div>
+                    <div class="mock-bar-row">
+                        <div class="mock-bar-label">Food</div>
+                        <div class="mock-bar-track"><div class="mock-bar-fill" style="width:42%;background:linear-gradient(90deg,#36d9f5,#4f8ef7)"></div></div>
+                        <div class="mock-bar-pct">42%</div>
+                    </div>
+                    <div class="mock-bar-row">
+                        <div class="mock-bar-label">Transport</div>
+                        <div class="mock-bar-track"><div class="mock-bar-fill" style="width:28%;background:linear-gradient(90deg,#7bb3ff,#36d9f5)"></div></div>
+                        <div class="mock-bar-pct">28%</div>
+                    </div>
+                    <div class="mock-bar-row">
+                        <div class="mock-bar-label">Savings</div>
+                        <div class="mock-bar-track"><div class="mock-bar-fill" style="width:85%;background:linear-gradient(90deg,#27c93f,#36d9f5)"></div></div>
+                        <div class="mock-bar-pct">85%</div>
+                    </div>
+                    <div class="mock-bar-row">
+                        <div class="mock-bar-label">Leisure</div>
+                        <div class="mock-bar-track"><div class="mock-bar-fill" style="width:31%;background:linear-gradient(90deg,#c8a96e,#4f8ef7)"></div></div>
+                        <div class="mock-bar-pct">31%</div>
+                    </div>
+                </div>
+                <div class="ai-chip">
+                    <i class="fas fa-star"></i>
+                    Budget Buddy: You're on track to hit your Q2 goal
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TEAM -->
+<section class="section team-section" id="team">
+    <div class="section-inner">
+        <span class="eyebrow reveal">The People</span>
+        <h2 class="section-title reveal reveal-delay-1">Meet the team behind Centsible</h2>
+        <p class="section-sub reveal reveal-delay-2">A group of passionate builders committed to making financial empowerment accessible to everyone.</p>
+        <div class="team-grid">
+            <div class="team-card reveal">
+                <div class="team-avatar"><i class="fas fa-code"></i></div>
+                <div class="team-name">Raghuram Duvvuri</div>
+                <div class="team-role">Lead Developer</div>
+                <div class="team-bio">Architecting the technology stack that powers intelligent financial management at scale.</div>
+            </div>
+            <div class="team-card reveal reveal-delay-1">
+                <div class="team-avatar"><i class="fas fa-flask"></i></div>
+                <div class="team-name">Akhil Kotikalapudi</div>
+                <div class="team-role">Research Specialist</div>
+                <div class="team-bio">Researching financial trends and user behavior to continuously drive product innovation.</div>
+            </div>
+            <div class="team-card reveal reveal-delay-2">
+                <div class="team-avatar"><i class="fas fa-chart-pie"></i></div>
+                <div class="team-name">Daksh Bhardwaj</div>
+                <div class="team-role">Finance &amp; Operations</div>
+                <div class="team-bio">Ensuring financial sustainability and seamless day-to-day operations across the board.</div>
+            </div>
+            <div class="team-card reveal reveal-delay-3">
+                <div class="team-avatar"><i class="fas fa-bullhorn"></i></div>
+                <div class="team-name">Varun Krishnan</div>
+                <div class="team-role">Marketing Manager</div>
+                <div class="team-bio">Sharing the Centsible story with the world and growing the community that makes it matter.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="cta-box reveal">
+        <h2 class="cta-title">Ready to take control?</h2>
+        <p class="cta-sub">Join Centsible and start making every cent count — starting today.</p>
+        <div class="cta-actions">
+            <a href="#features" class="btn-primary">Get Started Free &rarr;</a>
+            <a href="#team" class="btn-ghost">Meet the Team</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-wrap">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a href="#top" class="footer-logo">
+                    <img src="images/logo.png" alt="Centsible" />
+                    <span class="footer-logo-name">Centsible</span>
                 </a>
-                <div class="nav-right">
-                    <ul class="nav-menu">
-                        <li>
-                            <a href="#features" class="nav-link">Features</a>
-                        </li>
-                        <li>
-                            <a href="#how-it-works" class="nav-link"
-                                >How It Works</a
-                            >
-                        </li>
-                        <li><a href="#team" class="nav-link">Team</a></li>
+                <p class="footer-tagline">AI-powered financial intelligence for everyone. Make every cent count.</p>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h5>Product</h5>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#who">Who It's For</a></li>
                     </ul>
-                    <button
-                        id="dark-mode-toggle"
-                        class="dark-mode-btn"
-                        title="Toggle dark mode"
-                    >
-                        <i class="fas fa-moon"></i>
-                    </button>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#why">Why Centsible</a></li>
+                    </ul>
                 </div>
             </div>
-        </nav>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-copy">&copy; 2026 Centsible. All rights reserved.</span>
+        </div>
+    </div>
+</footer>
 
-        <!-- HERO -->
-        <header class="hero" id="top">
-            <div class="hero-content">
-                <div class="hero-logo-section">
-                    <img
-                        src="images/logo.png"
-                        alt="Centsible Logo"
-                        class="hero-logo"
-                    />
-                </div>
-                <h1>Centsible</h1>
-                <p class="hero-subtitle">Make Every Cent Count</p>
-                <p class="hero-description">
-                    Take control of your finances with personalized budgeting,
-                    AI-powered insights, and intelligent financial guidance.
-                    Centsible adapts to your life, helping you save more, invest
-                    smarter, and achieve your financial goals.
-                </p>
-            </div>
-        </header>
-
-        <!-- FEATURES GRID -->
-        <section class="features-section" id="features">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Powerful Features</h2>
-                    <p>Everything you need to master your finances</p>
-                </div>
-
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-sliders-h"></i>
-                        </div>
-                        <h3>Personalized Budgeting</h3>
-                        <p>
-                            Customizable budgets tailored to your unique
-                            financial situation. Set spending limits that work
-                            for your lifestyle.
-                        </p>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>AI Budget Creator</h3>
-                        <p>
-                            Intelligent algorithms analyze your spending
-                            patterns to automatically generate realistic and
-                            achievable budgets.
-                        </p>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <h3>Budget Buddy AI</h3>
-                        <p>
-                            Your personal AI assistant that understands your
-                            financial habits and provides smart, personalized
-                            guidance 24/7.
-                        </p>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-file-invoice-dollar"></i>
-                        </div>
-                        <h3>Tax Assistant</h3>
-                        <p>
-                            Maximize deductions and simplify tax filing with
-                            intelligent step-by-step guidance designed for your
-                            situation.
-                        </p>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3>Spending Insights</h3>
-                        <p>
-                            Get detailed analytics on where your money goes with
-                            visual breakdowns and actionable recommendations.
-                        </p>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Secure & Private</h3>
-                        <p>
-                            Bank-level encryption and privacy-first design means
-                            your financial data stays completely secure.
-                        </p>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <h3>Goal Tracking</h3>
-                        <p>
-                            Set financial goals and track your progress with
-                            real-time updates and motivational milestones.
-                        </p>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h3>Full Customization</h3>
-                        <p>
-                            Customize the app's look and feel to match your
-                            personal style while organizing your finances
-                            exactly how you like.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- HOW IT WORKS -->
-        <section class="how-it-works" id="how-it-works">
-            <div class="container">
-                <div class="section-header">
-                    <h2>How Centsible Works</h2>
-                    <p>Simple steps to financial control</p>
-                </div>
-
-                <div class="steps-grid">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <h3>Connect Your Finances</h3>
-                        <p>
-                            Securely link your accounts and transactions to get
-                            a complete financial picture.
-                        </p>
-                    </div>
-
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <h3>AI Analyzes Your Data</h3>
-                        <p>
-                            Centsible learns your spending patterns and
-                            financial situation through intelligent analysis.
-                        </p>
-                    </div>
-
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <h3>Get Personalized Guidance</h3>
-                        <p>
-                            Receive tailored budgets, insights, and
-                            recommendations based on your unique situation.
-                        </p>
-                    </div>
-
-                    <div class="step">
-                        <div class="step-number">4</div>
-                        <h3>Track & Achieve</h3>
-                        <p>
-                            Monitor progress in real-time and get support from
-                            Budget Buddy to reach your financial goals.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- WHO IS IT FOR -->
-        <section class="benefits-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Who Benefits from Centsible?</h2>
-                    <p>Designed for anyone serious about their finances</p>
-                </div>
-
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <h3>Students & Young Professionals</h3>
-                        <p>
-                            Learn healthy financial habits early and build a
-                            strong foundation for your future.
-                        </p>
-                    </div>
-
-                    <div class="benefit-card">
-                        <h3>Families on a Budget</h3>
-                        <p>
-                            Manage household finances effectively and teach your
-                            children about money management.
-                        </p>
-                    </div>
-
-                    <div class="benefit-card">
-                        <h3>Freelancers & Self-Employed</h3>
-                        <p>
-                            Track irregular income and simplify tax preparation
-                            with intelligent categorization.
-                        </p>
-                    </div>
-
-                    <div class="benefit-card">
-                        <h3>Aspiring Investors</h3>
-                        <p>
-                            Understand your spending and investing capacity to
-                            build long-term wealth.
-                        </p>
-                    </div>
-
-                    <div class="benefit-card">
-                        <h3>Anyone Wanting Change</h3>
-                        <p>
-                            Take control of your money and transform your
-                            financial future starting today.
-                        </p>
-                    </div>
-
-                    <div class="benefit-card">
-                        <h3>Financial Planners</h3>
-                        <p>
-                            Provide clients with intelligent insights and
-                            guidance for better financial decisions.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- KEY BENEFITS -->
-        <section class="key-benefits">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Why Choose Centsible?</h2>
-                    <p>What sets us apart</p>
-                </div>
-
-                <div class="benefits-list">
-                    <div class="benefit-row">
-                        <div class="benefit-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <div class="benefit-content">
-                            <h3>Truly Personalized</h3>
-                            <p>
-                                Not one-size-fits-all. Every budget,
-                                recommendation, and interface element adapts to
-                                you.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="benefit-row">
-                        <div class="benefit-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <div class="benefit-content">
-                            <h3>AI-Powered Intelligence</h3>
-                            <p>
-                                Advanced machine learning understands your
-                                financial behavior and provides smart guidance.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="benefit-row">
-                        <div class="benefit-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <div class="benefit-content">
-                            <h3>Always Available</h3>
-                            <p>
-                                Budget Buddy is there when you need financial
-                                advice, 24 hours a day, 7 days a week.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="benefit-row">
-                        <div class="benefit-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <div class="benefit-content">
-                            <h3>Privacy First</h3>
-                            <p>
-                                Your financial data is encrypted and never
-                                shared. You're always in control.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="benefit-row">
-                        <div class="benefit-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <div class="benefit-content">
-                            <h3>Built for Real Life</h3>
-                            <p>
-                                Handles complex financial situations—irregular
-                                income, multiple accounts, investments, and
-                                more.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- TEAM -->
-        <section class="team-section" id="team">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Meet Our Team</h2>
-                    <p>Passionate about financial empowerment</p>
-                </div>
-
-                <div class="team-grid">
-                    <div class="team-card">
-                        <div class="team-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Raghuram Duvvuri</h3>
-                        <p class="role">Lead Developer</p>
-                        <p class="bio">
-                            Architecting the technology that powers intelligent
-                            financial management.
-                        </p>
-                    </div>
-
-                    <div class="team-card">
-                        <div class="team-icon">
-                            <i class="fas fa-flask"></i>
-                        </div>
-                        <h3>Akhil Kotikalapudi</h3>
-                        <p class="role">Research Specialist</p>
-                        <p class="bio">
-                            Researching financial trends and user behavior to
-                            drive innovation.
-                        </p>
-                    </div>
-
-                    <div class="team-card">
-                        <div class="team-icon">
-                            <i class="fas fa-chart-pie"></i>
-                        </div>
-                        <h3>Daksh Bhardwaj</h3>
-                        <p class="role">Finance & Operations</p>
-                        <p class="bio">
-                            Ensuring financial sustainability and seamless
-                            operations.
-                        </p>
-                    </div>
-
-                    <div class="team-card">
-                        <div class="team-icon">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <h3>Varun Krishnan</h3>
-                        <p class="role">Marketing Manager</p>
-                        <p class="bio">
-                            Sharing the Centsible story with the world.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-col">
-                        <a href="#top" class="footer-logo-link">
-                            <img
-                                src="images/logo.png"
-                                alt="Centsible Logo"
-                                class="footer-logo"
-                            />
-                        </a>
-                        <h4>Centsible</h4>
-                        <p>Make Every Cent Count.</p>
-                    </div>
-
-                    <div class="footer-col">
-                        <h4>Product</h4>
-                        <ul>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#how-it-works">How It Works</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#team">Team</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Centsible. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
-    </body>
+<script src="script.js"></script>
+</body>
 </html>
